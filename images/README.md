@@ -10,7 +10,7 @@ No local setup required — everything runs inside your browser tab.
 From your GitHub repository page:
 
 1. Click on **Code → Codespaces → Create codespace on main**
-   ![Create Codespace]("1.jpg")
+   ![Create Codespace](1.jpg)
 
 GitHub will automatically create a cloud-based Ubuntu environment for you.
 All setup and dependencies are pre-configured.
@@ -115,4 +115,5 @@ Codespace provisioning and environment are maintained by **VSD (VLSI System Desi
 **Now, simulate your first CMOS circuit — completely on the cloud.**
 
 Learn. Design. Run. Visualize.
+
 
