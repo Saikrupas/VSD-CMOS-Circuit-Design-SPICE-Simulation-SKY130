@@ -34,7 +34,7 @@
 #### <u>Circuit design and SPICE simulation </u></br>
 A circuit design includes PMOS and NMOS tied together in a particular fashion so that they result into logic gates such as NAND, NOR, OR, AND etc.</br>
 
-<img width="510" height="510" alt="image" src=images-DAY1/img-1.png/>
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-1.png?raw=true"/>
 
 The above is an inverter it has an PMOS transistor and an NMOS transistor, the drains(D) of both the transistors are connected together, the gates(G) of both are tied together and this kind of connection fashion of NMOS and PMOS transistors gives the functionality of an inverter.</br>
 Similarly,we will have a bunch of PMOS at the top and NMOS at the bottom to give the functionality of NAND,NOR or any kind of gates. So the <u>circuit design</u> determines what kind of PMOS and NMOS transistors needs to be connected in a certain fashion to provide a particular functionality.</br>
@@ -44,20 +44,20 @@ The above inverter will have the following charactersitics, they basically descr
 So, we do SPICE simulations to tune the delay and we will get the W/L ratio of that particular transistor.</br>
 #### Tune the delay <---> tune the W/L ratio </br>
 
-<img width="510" height="510" alt="image" src=images-DAY1/img-2.png />
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-2.png?raw=true"/>
 
 **Why do we need SPICE?**</br>
 The clock Tree synthesis, crosstalks, and timing are built on SPICE (Simulation Program with Integrated Circuit Emphasis), without SPICE there won't be any delays and if there are no delays clock tree, physical design flow, crosstalk dosen't make any sense.</br>
 
 Let us say we have done some Clock Tree Synthesis of the circuit shown below with bufffers with different specifications ( type-1 and type-2 buffers) with different capacitive load at the output.</br>
 
-<img width="1305" height="510" alt="image" src= images-DAY1/img-5.png/>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-5.png?raw=true"/>
 
 After the SPICE simulation we get a "Delay Table", which includes input slew and output load. The intersection value of Input slew and Output load is considered as <u>Delay</u>. Delay tables for both level 1 and level 2 buffers have been shown in the below image. This is calculated by circuit design and SPICE simulation.</br>.
 The delay values of type 1 and type 2 buffers have different values becaues  both the buffers might be made up of different PMOS and NMOS transistors.</br>
 In reality, every PMOS and NMOS transistor differs form near by transistors.</br>
 
-<img width="1305" height="510" alt="image" src= images-DAY1/img-6.png />
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-6.png?raw=true" />
 
 The Cbuf1 and Cbuf2 will have different W/L ratios. These values are obtained from circuit design.</br> 
 The source of the above values in the Delay Tables comes from circuit design using SPICE simulations. SPICE simulations involves characterisation of any CMOS logic into detail.</br>
@@ -68,23 +68,23 @@ The source of the above values in the Delay Tables comes from circuit design usi
 A NMOS is a 4-terminal device with gate,source,drain and body as its terminals.The NMOS means <u>N-channel MOS transistor</u> (metal oxide semiconductor).</br>
 The NMOS transistor consist of P-type substrate (Sub), with heavily doped with n+ region. There are two isolated regions made up of SiO2 which acts an insulator therefore isolates the transistor from other transistors . The n+ regions acts as diffusion regions and denotes Source (S) and Drain (D) respectively. Above it there gate oxide layer, and top of it has a poly-Si / metal gate deposition which acts as the Gate (G) termianal.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-7.png />
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-7.png?raw=true"/>
 
 **Threshold Voltage (Vt)**</br>
 This is a very important term, all the characterisation depends on threshold voltage.</br>
 At first we will keep the Vgs=0, means source and drain terminals both are grounded. Body is also grounded. P-substrate and n+ act as PN junction diode and as there is no potential so there is a high resistance. No channel formation is there.</br>
 
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-8.png />
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-8.png?raw=true" />
 
 Now, if we will apply a small positive  potential at Vgs>0. We will observe  positive charge accumulation  at the gate terminal and as a result of this the negative charges stars to accumulate at the surface of the substrate.</br>
 The positively charges starts to repel towards the interiors of the P-substrate leaving behind negative charges.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-9.png /></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-9.png?raw=true" /></br>
 
 The ones that are left behind are the negative charges.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-10.png/>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-10.png?raw=true"/>
 
 -----
 
@@ -92,34 +92,34 @@ The ones that are left behind are the negative charges.</br>
 
 Due to Accumulation of negatuve charges, there will be formation of Depletion Region, depleting of it's majority carriers i.e positive carriers here.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-11.png/></br>
-<img width="1305" height="510" alt="image" src=images-DAY1/img-12.png/>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-11.png?raw=true"/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-12.png?raw=true"/>
 
 Now, we will gradually increase the  Gate voltage (Vgs) further, we will see that the positive charge carriers will be repelled and there will be increase of Depletion Width. On further increase of Gate voltage (Vgs) we will reach a point where the small surface of P-substrate gets inverted into an n-type material/surface completely, this is called <u>"Surface Inversion" or "Strong Inversion".</u> The gate voltage (Vgs) where Strong Inversion happens is called <u>"Threshold Voltage (Vt)"</u>.</br>
 
 **<u>The gate voltage (Vgs) at which the strong inversion / surface inversion happens is referred as the Threshold voltage (Vt)**</u></br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-14.png/>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-14.png?raw=true"/>
 
 **What will happen if we further increase the gate voltage (Vgs)?**</br>
  As there are no more negative charges that will be attracted towards the positive gate voltage(Vgs), The negative charges from n+ regions will get attracted and threfore the channel width gets increased resulting in the  formation of channel at the surface but the depletion region width remains unchanged.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-15.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-15.png?raw=true"/></br>
 
 Now there is a possibility of current flow from Source to Drain. The channel has bridged the gap between source to drain regions. But as there is no Drain voltage so the elctrons will not move, This region of operation of NMOS transistor is called as the <u>Cut-off region</u>.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-16.png/>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-16.png?raw=true"/>
 
 We will see what happens when we apply  potential at the Body terminal.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-17.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-17.png?raw=true"/></br>
 
 So when we apply a positive potential to the source-to-body terminal ie, Vsb.The source to body area gets additional reverse biased.
 This will result in the increase of the depletion region width between source and body terminal. </br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-18.png/></br>
-<img width="1305" height="510" alt="image" src=images-DAY1/img-19.png/></br>
-<img width="1305" height="510" alt="image" src=images-DAY1/img-20.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-18.png?raw=true"/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-19.png?raw=true"/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-20.png?raw=true"/></br>
 
 ------
 
@@ -127,21 +127,21 @@ This will result in the increase of the depletion region width between source an
 
 If we increase Vgs, we will see that the depletion region width increase in both the cases. But, in second case as there is Vsb +ve, few charges from the channel will get pulled towards the source.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-21.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-21.png?raw=true"/></br>
 
 Due to this phenomena the surface inversion will be slower in second case. Therefore some extra potential has to be apllied in second case to create surface inversion.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-22.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-22.png?raw=true"/></br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-23.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-23.png?raw=true"/></br>
 
 In the presence of substrate bias (Vsb), an additional potential is required for strong inversion.</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-24.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-24.png?raw=true"/></br>
 
 The parameters such as Gamma(body effect coefficient) comes from the technology parameters or the device parameters(doping concentration of p-substrate/n+ region).These values are all constants that comes from the foundry,these constants are termed as models and these constant values  are feed to the SPICE simulator will derive the Threshold voltage out of these values and this threshold voltage (Vt), will represent a particular requirement of device (NMOS or PMOS).</br>
 
-<img width="1305" height="510" alt="image" src=images-DAY1/img-25.png/></br>
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-25.png?raw=true"/></br>
 
 -----
 -----
@@ -154,13 +154,13 @@ Previously, we learned about the  Cut Off region of operation of the MOSFET, now
 
 In the below image, when Vgs=vt is the voltage at which the <u> strong inversion</u> occurs and this voltage is termed as the <u> threshold voltage (Vt).</u>Therefore, the P type surface gets converted completely into a N-type material.</br>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-26.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-26.png?raw=true"/></br>
 
 As Vgs=Vt,now if we keep on increasing the Gate-source voltage(Vgs) than (Vt), ie.(Vgs>Vt),the charge carries increases in the channel region thus the channel width keeps on increasing between soucre and drain region.</br>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-27.png/>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-27.png?raw=true"/>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-28.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-28.png?raw=true"/></br>
 
 **<u>Resistive Operation of NMOS**</u></br>
 
@@ -169,28 +169,28 @@ As the value of Vgs increase from 1v,1.5v,2v,2.5v, it refers to <u> the induced 
 
 > (Qi) = (Vgs - Vt)
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-29.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-29.png?raw=true"/></br>
 
 so, (Vgs - Vt) is basically is the potential to turn on the transistor.</br>
  
  Now,let's apply very small drain-source voltage (Vds) (Vds=0.05v).By keeping the Vgs=1V and the is Vt=0.5v.
  The value of Vgs>Vt following the transistor to turn ON(conducting channel between source-drain).</br>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-30.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-30.png?raw=true"/></br>
 
 Now,as we can see the source is grounded and the drain is connected to Vds.
 Ideally, if we observe the source is at 0 potential and the source is at Vds potential,so there will be a voltage gradient across the channel ie. the voltage is not constant all over the channel.</br>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-31.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-31.png?raw=true"/></br>
 
 If you look the effective channel length(L), the difference between the channel length and effective channel length is the one that we get after process.</br>
 The effective channel length is much lesser than the actual channel length.Because of the fabrication techniques.</br>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-32.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-32.png?raw=true"/></br>
 
 The x-axis represents the effective channel length (L).</br>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-32.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-32.png?raw=true"/></br>
 
 Here, y-axis represents the width of transistor and x-axis represents the voltage across the channel.</br>
 On applying Vds, every point on x-axis(along the length of the channel) will vary w.r.t to Vgs-V(x),so the effective channel voltage/ gate to channel voltage on the application of Vgs will be:-</br>
@@ -199,7 +199,7 @@ On applying Vds, every point on x-axis(along the length of the channel) will var
 
  This will lead to the current flow and this will decide the current flow equation.</br>
 
-<img width="1305" height="508" alt="image" src= images-DAY1/img-34.png/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-34.png?raw=true"/></br>
 
 -----
 
@@ -242,5 +242,6 @@ But, here we cannot say that it is in Linear region, since the Drain current is 
 When (Vgs-Vt)>=Vds, It is in "Linear region".</br>
 
 <img width="683" height="443" alt="image" src="https://github.com/user-attachments/assets/bdfa5383-5b3b-452f-b437-0768814f2551" />
+
 
 ### <u>Lecture-4:-SPICE conclusion to resistive operation</u>
