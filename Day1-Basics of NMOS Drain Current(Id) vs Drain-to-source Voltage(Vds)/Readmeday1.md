@@ -13,9 +13,9 @@
     - [LECTURE-4-Threshold voltage with positive substrate potential](#lecture-4--threshold-voltage-with-positive-substrate-potential)
   - [TOPIC-2:-NMOS resistive region and Saturation region of operation](#NMOS-resistive-region-and-Saturation-region-of-operation)
     - [LECTURE-1-Resistive region of operation with small drain-source voltage](#lecture-1-resistive-region-of-operation-with-small-drain-source-voltage)
-    - [LECTURE-2-Drift current theory](#L2-Drift-current-theory)
-    - [LECTURE-3-Drain current model for Linear region of operation](#L3-Drain-current-model-for-Linear-region-of-operation)
-    - [LECTURE-4-SPICE conclusion to resistive operation](#L4-SPICE-conclusion-to-resistive-operation)
+    - [LECTURE-2-Drift current theory](#lecture-2-drift-current-theory)
+    - [LECTURE-3-Drain current model for Linear region of operation](#lecture-3-drain-current-model-for-linear-region-of-operation)
+    - [LECTURE-4-SPICE conclusion to resistive operation](#lecture-4-spice-conclusion-to-resistive-operation)
     - [LECTURE-5-Pinch-off region condition](#L5-Pinch-off-region-condition)
     - [LECTURE-6-Drain current model for saturation region of operation](#L6-Drain-current-model-for-saturation-region-of-operation)
   - [TOPIC-3:-Introduction to SPICE](#Introduction-to-SPICE)
@@ -247,3 +247,4 @@ To get the drain current(Id), which is the current due to the difference in the 
 ### <u>Lecture-4:-SPICE conclusion to resistive operation</u>
 
 ------
+
