@@ -154,13 +154,13 @@ Previously, we learned about the  Cut Off region of operation of the MOSFET, now
 
 In the below image, when Vgs=vt is the voltage at which the <u> strong inversion</u> occurs and this voltage is termed as the <u> threshold voltage (Vt).</u>Therefore, the P type surface gets converted completely into a N-type material.</br>
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-26.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-26.png?raw=true"></br>
 
 As Vgs=Vt,now if we keep on increasing the Gate-source voltage(Vgs) than (Vt), ie.(Vgs>Vt),the charge carries increases in the channel region thus the channel width keeps on increasing between soucre and drain region.</br>
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-27.png?raw=true"/>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-27.png?raw=true">
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-28.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-28.png?raw=true"></br>
 
 **<u>Resistive Operation of NMOS**</u></br>
 
@@ -169,28 +169,28 @@ As the value of Vgs increase from 1v,1.5v,2v,2.5v, it refers to <u> the induced 
 
 > (Qi) = (Vgs - Vt)
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-29.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-29.png?raw=true"></br>
 
-so, (Vgs - Vt) is basically is the potential to turn on the transistor.</br>
+so, (Vgs - Vt) is basically the potential to turn on the transistor.</br>
  
  Now,let's apply very small drain-source voltage (Vds) (Vds=0.05v).By keeping the Vgs=1V and the is Vt=0.5v.
  The value of Vgs>Vt following the transistor to turn ON(conducting channel between source-drain).</br>
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-30.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-30.png?raw=true"></br>
 
 Now,as we can see the source is grounded and the drain is connected to Vds.
 Ideally, if we observe the source is at 0 potential and the source is at Vds potential,so there will be a voltage gradient across the channel ie. the voltage is not constant all over the channel.</br>
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-31.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-31.png?raw=true"></br>
 
 If you look the effective channel length(L), the difference between the channel length and effective channel length is the one that we get after process.</br>
 The effective channel length is much lesser than the actual channel length.Because of the fabrication techniques.</br>
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-32.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-32.png?raw=true"></br>
 
 The x-axis represents the effective channel length (L).</br>
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-32.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-32.png?raw=true"></br>
 
 Here, y-axis represents the width of transistor and x-axis represents the voltage across the channel.</br>
 On applying Vds, every point on x-axis(along the length of the channel) will vary w.r.t to Vgs-V(x),so the effective channel voltage/ gate to channel voltage on the application of Vgs will be:-</br>
@@ -199,49 +199,51 @@ On applying Vds, every point on x-axis(along the length of the channel) will var
 
  This will lead to the current flow and this will decide the current flow equation.</br>
 
-<img width="1305" height="508" alt="image" src= "https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-34.png?raw=true"/></br>
+<img width="1305" height="508" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-34.png?raw=true"></br>
 
 -----
 
 ### <u>Lecture-2:-Drift current theory</u>
 
-We know the effective channel voltage will vary w.r.t x, for example at x=0, Vgs=1V and V(x)=0, So the Vgs-Vx=1V. At x=Vds=0.05V, Vgs-Vx=0.95V. Now if we see the induced chagre equation, it is proportional to the effective channel voltage.</br>
+Till now we know that effective channel voltage will vary w.r.t x so effective voltage is <u>Vgs-V(x)</u>, for example at x=0, Vgs=1V and V(x)=0, the Vgs-V(x)=1V. At V(x)=Vds=0.05V, the Vgs=1V Vgs-V(x)=0.95V. The voltage across the channel will lies between 1V to 0.95V so the channel voltage is not constant its a  gradient because of the presence of Vds.</br>
 
-<img width="411" height="150" alt="image" src="https://github.com/user-attachments/assets/f303fe6e-388f-4395-9650-e7121cd5aff4" />
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-35.png?raw=true"></br>
 
-<img width="390" height="451" alt="image" src="https://github.com/user-attachments/assets/14f8c404-0d02-4d21-8d67-b20ff1801eae" />
+The amount of induced charges in the channel in the presence of Vds. The charge which is induced in the channel is proportional to the Vgs-V(x) which is the effective voltage at each and every point in the channel. </br>
+Now, in the induced chagre equation, it is proportional to the effective channel voltage.</br>
+Basically, the induced charge at every point is,</br>
+>Q = C . V (charge conservation principle)
 
-There are two types of currents; Dift and Diffusion current, Here there is Drift current as there is potential difference across the channel.</br>
+Here, Cox is the gate oxide capacitance.
 
-<img width="1285" height="618" alt="image" src="https://github.com/user-attachments/assets/e1ba1c63-b342-4377-9fe8-1a2e58c93e02" />
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-36.png?raw=true"></br>
 
-To get the drain current, we will see the top view of transistor.</br>
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-37.png?raw=true"></br>
 
-<img width="1311" height="687" alt="image" src="https://github.com/user-attachments/assets/6c473806-a163-4120-974a-73e11da97839" />
+So, with this above formula of charge lets derive the current equations. Because current is the function of charges in the channel.</br>
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-38.png?raw=true"></br>
+
+The above values are constants which are given by the foundary and the technology node used.</br>
+
+There are two types of currents:-</br>
+
+ <u>Dift current</u>- current due to the differnce in th potential differnce.</br>
+ <u>Diffusion current</u> - current due to the variation of charge carrier concentration.</br>
+ Here there is Drift current as there is a potential difference across the effective channel.</br>
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-38.png?raw=true"/></br>
+
+To get the drain current(Id), which is the current due to the difference in the potential (drift current), we will see the top view of transistor to measure the drain current.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-39.png?raw=true"></br>
+
+------
 
 ### <u>Lecture-3:-Drain current model for Linear region of operation</u>
 
-As there is change of voltage across the channel length, this will result in change of velocity which is a function of mobility and electrci field.</br>
-
-<img width="448" height="651" alt="image" src="https://github.com/user-attachments/assets/6518460a-1e4c-481f-8341-d99a1fa9a376" />
-
-We will integrate the above equation, where limits of dV will be from 0 to Vds and limits of dx will be from 0 to L.</br>
-
-<img width="442" height="428" alt="image" src="https://github.com/user-attachments/assets/382f07af-71b5-4f00-894d-bdab05e92d0e" />
-
-<img width="377" height="48" alt="image" src="https://github.com/user-attachments/assets/f6f5158c-850f-4272-b381-0b57dc30e7a9" />
-
-Here, Cox, W/L, Vgs, un and Vt are the 'technology parameters', we will simulate usinf SPICE and find out the characteristics.</br>
-
-<img width="387" height="211" alt="image" src="https://github.com/user-attachments/assets/ee457e12-6af7-4389-a11a-036ba5a4b652" />
-
-But, here we cannot say that it is in Linear region, since the Drain current is the quadratic function of Vds. We will calculate the Id with the given values.</br>
-
-<img width="708" height="432" alt="image" src="https://github.com/user-attachments/assets/853ed5fa-0257-4a73-91dd-09007f16d273" />
-
-When (Vgs-Vt)>=Vds, It is in "Linear region".</br>
-
-<img width="683" height="443" alt="image" src="https://github.com/user-attachments/assets/bdfa5383-5b3b-452f-b437-0768814f2551" />
-
+------
 
 ### <u>Lecture-4:-SPICE conclusion to resistive operation</u>
+
+------
