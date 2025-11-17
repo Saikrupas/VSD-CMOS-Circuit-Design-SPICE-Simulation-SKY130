@@ -242,9 +242,47 @@ To get the drain current(Id), which is the current due to the difference in the 
 
 ### <u>Lecture-3:-Drain current model for Linear region of operation</u>
 
+Till now we know that the  drain current (Id), is the product of velocity of charge carriers with available charge over the channel width.</br> 
+
+As there is change of voltage across the channel length, which will result in change of velocity of charge carriers which is a function of mobility and electrci field.The value of mobility is constant for electrons and holes.
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-40.png?raw=true"></br>
+
+> Id = Vn(x) . Q(x) . W   -> (1)
+
+In the above equation, substitute Vn(x) = 	μn . dV/dx </br>
+Q(i) = -Cox([Vgs - V(x)]- Vt) </br>
+
+Now, we will integrate the above equation (1),over the channel length (L), with the limits of dV will be from 0 to Vds and limits of dx will be from 0 to L (channel length). Thus get the simplest model for drain current (Id).</br>
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-41.png?raw=true"></br>
+
+
+The simplest drain current equation that we get after simplification contains  Cox, W/L, Vgs, μn and Vt these are called as  <u>technology constants/technology parameters</u> or models for model file, these values are supplied to the  SPICE simulator to compute the value of drain current.</br>
+
+<img width="" height="" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-42.png?raw=true"></br>
+
+<img width="" height="" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-43.png?raw=true"></br>
+
+<img width="" height="" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-44.png?raw=true"></br>
+
+But, the above equation  is not a in Linear function,of voltage (Vds),from the equation, the drain current is a quadratic function of Vds. We will calculate the Id with the given values.
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-45.png?raw=true"></br>
+
+From the above calculations we can conclude that if the value of (Vgs-Vt)>=Vds, the MOSFET operates in the <u>"Linear region /resistive region"</u> of operation.
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-46.png?raw=true"></br>
+
+From the above calculation if the value of $Vds^2$ /2 value is less than 0,so its ignored.</br>
+
+Now, the drain current (Id) becomes a linear function of Vds.
+>Id =kn . (Vgs - Vt) Vds  ---> the MOSFET operates in the linear / resistive region of operation.
+
 ------
 
 ### <u>Lecture-4:-SPICE conclusion to resistive operation</u>
 
 ------
+
 
