@@ -283,6 +283,16 @@ Now, the drain current (Id) becomes a linear function of Vds.
 
 ### <u>Lecture-4:-SPICE conclusion to resistive operation</u>
 
-------
+We need to find the impact of Vgs and Vds on the drain current equation.For this we will consider different values of Vgs and Vds. If we consider different values of Vgs, under what condition the device will remain in Linear/resistive region depends on (Vgs-Vt) value this should be greater than Vds.</br>
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-47.png?raw=true"></br>
+
+So, to calculate the value of Id for different values of 'Vgs', for every value of 'Vgs', we need to sweep Vds form 0 to (Vgs-Vt) to make the device operate in linear region of operation.</br>
+For doing the calculations automatically we need to use SPICE simulations.</br>
+
+-----
+
+
+
 
 
