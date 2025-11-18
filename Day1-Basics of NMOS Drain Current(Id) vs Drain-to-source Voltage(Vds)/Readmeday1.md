@@ -292,6 +292,40 @@ For doing the calculations automatically we need to use SPICE simulations.</br>
 
 -----
 
+### <u>Lecture-5:-Pinch-off region condition</u>
+
+**What will happen if the value of Vds>=(Vgs - Vt)?**</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-48.png?raw=true"></br>
+
+If we increase the value of Vds from 0.05V to 0.95V gradually by keeping Vgs=1 and Vt=0.45 values as constant. So for Vds values from 0.05V to 0.45V the value of (Vgs - Vds) ie. the channel voltage
+is greater than Vt. Because of which we can see a conducting channel from source to drain.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-49.png?raw=true"></br>
+
+At the value of Vds where the value of  (Vgs - Vds) = Vt, at this point the surface / strong inversion is about to happen  at one end of the channel but at other end the surface inversion had already have happened.Due to this mismatch in voltage the channel starts to disappear towards the drain region.This phenomena of disappering of channel is refered to as <u>pinch-off phenomenon</u>.Still there will be a flow of current due to the potential difference present.
+</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-50.png?raw=true">
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-51.png?raw=true">
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-52.png?raw=true"></br>
+
+But the linearity of the flow of current will change.As the value of Vds increases the value of (Vgs - Vds) becomes less than Vt. At this condition there will not be any channel present near the drain region. The channel vanishes near the drain region but there is channel present near the source region. This condition is referred to as <u> Saturation Region</u>. </br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-53.png?raw=true"></br>
+
+The region of  operation when Vds voltage exceeds the value (Vgs-Vt), the region of operation is called Saturation Region.During this condition the linearity of current is maintained. </br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-54.png?raw=true"></br>
+
+When the MOSFET is in satuaration region ie. (Vgs - Vds) <= Vt, it operates at a constant current source. </br>
+
+> (Vgs - Vds) <= Vt  --> Saturation Region of operation of Mosfet.
+
+-----
+
 
 
 
