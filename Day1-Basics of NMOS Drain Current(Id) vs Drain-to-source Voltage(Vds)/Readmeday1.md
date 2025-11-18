@@ -16,8 +16,8 @@
     - [LECTURE-2-Drift current theory](#lecture-2-drift-current-theory)
     - [LECTURE-3-Drain current model for Linear region of operation](#lecture-3-drain-current-model-for-linear-region-of-operation)
     - [LECTURE-4-SPICE conclusion to resistive operation](#lecture-4-spice-conclusion-to-resistive-operation)
-    - [LECTURE-5-Pinch-off region condition](#L5-Pinch-off-region-condition)
-    - [LECTURE-6-Drain current model for saturation region of operation](#L6-Drain-current-model-for-saturation-region-of-operation)
+    - [LECTURE-5-Pinch-off region condition](#lecture-5-pinch-off-region-condition)
+    - [LECTURE-6-Drain current model for saturation region of operation](#lecture-6-drain-current-model-for-saturation-region-of-operation)
   - [TOPIC-3:-Introduction to SPICE](#Introduction-to-SPICE)
     - [L1 Basic SPICE setup](#L1-Basic-SPICE-setup)
     - [L2 Circuit description in SPICE syntax](#L2-Circuit-description-in-SPICE-syntax)
@@ -325,6 +325,7 @@ When the MOSFET is in satuaration region ie. (Vgs - Vds) <= Vt, it operates at a
 > (Vgs - Vds) <= Vt  --> Saturation Region of operation of Mosfet.
 
 -----
+
 
 
 
