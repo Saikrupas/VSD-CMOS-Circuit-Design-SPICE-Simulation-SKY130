@@ -11,19 +11,19 @@
     - [LECTURE-2-Introduction to basic element in circuit design-NMOS](#lecture-2--introduction-to-basic-element-in-circuit-design-nmos)
     - [LECTURE-3-Strong inversion and threshold voltage](#lecture-3--strong-inversion-and-threshold-voltage)
     - [LECTURE-4-Threshold voltage with positive substrate potential](#lecture-4--threshold-voltage-with-positive-substrate-potential)
-  - [TOPIC-2:-NMOS resistive region and Saturation region of operation](#NMOS-resistive-region-and-Saturation-region-of-operation)
+  - [TOPIC-2:-NMOS resistive region and Saturation region of operation](#topic-2--nmos-resistive-region-and-saturation-region-of-operation)
     - [LECTURE-1-Resistive region of operation with small drain-source voltage](#lecture-1-resistive-region-of-operation-with-small-drain-source-voltage)
     - [LECTURE-2-Drift current theory](#lecture-2-drift-current-theory)
     - [LECTURE-3-Drain current model for Linear region of operation](#lecture-3-drain-current-model-for-linear-region-of-operation)
     - [LECTURE-4-SPICE conclusion to resistive operation](#lecture-4-spice-conclusion-to-resistive-operation)
     - [LECTURE-5-Pinch-off region condition](#lecture-5-pinch-off-region-condition)
     - [LECTURE-6-Drain current model for saturation region of operation](#lecture-6-drain-current-model-for-saturation-region-of-operation)
-  - [TOPIC-3:-Introduction to SPICE](#topic-3-introduction-to-spice)
-    - [L1 Basic SPICE setup](#lecture-1-basic-spice-setup)
-    - [L2 Circuit description in SPICE syntax](#L2-Circuit-description-in-SPICE-syntax)
-    - [L3 Define Technology parameters](#L3-Define-Technology-parameters)
-    - [L4 First SPICE simulation](#L4-First-SPICE-simulation)
-    - [L5 SPICE lab with Sky130 models](#L5-SPICE-lab-with-Sky130-models)
+  - [TOPIC-3:-Introduction to SPICE](#topic-3--introduction-to-spice)
+    -[LECTURE-1-Basic SPICE setup](#lecture-1-basic-spice-setup)
+    - [LECTURE-2-Circuit description in SPICE syntax](#lecture-2-circuit-description-in-spice-syntax)
+    - [LECTURE-3-Define Technology parameters](#lecture-3-define-technology-parameters)
+    - [LECTURE-4-First SPICE simulation](#lecture-4-first-spice-simulation)
+    - [LECTURE-5-SPICE lab with Sky130 models-Lab-DAY-1](#lecture-5-spice-lab-with-sky130-models-lab-day-1)
 
 ---
 # NgspiceSky130-Day1-Basics of NMOS Drain Current(Id) vs Drain-to-source Voltage(Vds)
@@ -397,6 +397,7 @@ In the below figure, the supply voltage to the gate terminal is not provided dir
 -----
 
 ### <u>Lecture-2:-Circuit description in SPICE syntax</u>
+
 
 
 
