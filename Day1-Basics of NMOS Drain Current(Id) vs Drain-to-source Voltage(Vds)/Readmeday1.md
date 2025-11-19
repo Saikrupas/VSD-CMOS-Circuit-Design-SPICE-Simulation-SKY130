@@ -364,6 +364,39 @@ This is called Channel Length Modulation [1 + λ Vds] this shows that the Id is 
 -----
 -----
 
+## <u>Topic-3 :-Introduction to SPICE</u>
+
+### <u>Lecture-1:-Basic SPICE setup</u>
+
+**Basic SPICE setup :-** </br>
+
+SPICE is basically a software that has the pre-defined models, we need to feed the input values to the engine and the netlist to the engine.</br>
+Therefore, the SPICE will generate the waveforms, these waveforms can be used to calculate the delay of a cell.Further, these delays are used to calculate the STA.</br>
+
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-61.png?raw=true"></br>
+
+Some of the  parameters are constant (technology constant) for specific technology nodes, whose values are directly given from the foundaries no need to derive them. These are highlited in yellow.We provide these technology constant values to the SPICE engine through model files.</br>
+
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-62.png?raw=true"></br>
+
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-63.png?raw=true">
+
+So, we need to feed the SPICE model parameters and SPICE netlist to the SPICE software. To get the device characteristics in terms of Id vs Vds with different values of Vgs.</br>
+
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-65.png?raw=true"></br>
+
+**SPICE Netlist :-**
+
+We need to feed the device into the SPICE engine in a special way, the logical circuit equivalent of given MOSFET is as shown below.</br>
+In the below figure, the supply voltage to the gate terminal is not provided directly so we have connected a protection resistance to limit the current entering the gate terminal.
+
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-66.png?raw=true">
+
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-67.png?raw=true"></br>
+
+-----
+
+### <u>Lecture-2:-Circuit description in SPICE syntax</u>
 
 
 
