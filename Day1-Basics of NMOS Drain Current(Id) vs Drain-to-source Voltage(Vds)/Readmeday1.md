@@ -326,6 +326,43 @@ When the MOSFET is in satuaration region ie. (Vgs - Vds) <= Vt, it operates at a
 
 -----
 
+### <u>Lecture-6:-Drain current model for saturation region of operation</u>
+
+In the saturation region, the channel voltage  (Vgs-Vds) <= Vt,and the channel begins to disappear near the drain region.</br>
+During the resistive/linear region of operation, the channel voltage is (Vgs - Vds) > Vt during which there was a valid channel available, while in case of saturation regin of operatin the channel voltage is (Vgs - Vds) <= Vt, as the channel voltage goes below the threshold voltage the channel starts to disappear. </br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-55.png?raw=true"></br>
+
+In case of saturation region, the channel voltage changes it remains constant  to (Vgs - Vt) because there is a small channel present which is no longer dependent on the Vds (drain-source voltage) and the drain current flow remains constant.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-56.png?raw=true"></br>
+
+To get drain current (Id) equation in saturation region,</br>
+
+> Id =  kn . (Vgs - Vt) Vds  ---> the MOSFET operates in the linear / resistive region of operation.</br>
+
+As we move to higher values of Vds, the channel voltage remains constant at (Vgs - Vt). For Id in case of saturation region, we will replace Vds with (Vgs - Vt).</br>
+
+> Replacing Vds with --> (Vgs - Vt) in the above equaition we get , </br>
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-57.png?raw=true"></br>
+
+> Id = Kn'/2 . W/L . $(Vgs - Vt)^2$ 
+
+ According to the above equation, the MOSFET acts as constant current source. But this is not true, when we increase the value of Vds we will notice that the effective channel length reduces further because the depletion region near the drain increases and the channel length reduces by the amount of Vds that we increase.Therefore, we see a slight dependency of Id over Vds.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-58.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-59.png?raw=true">
+
+This is called Channel Length Modulation [1 + λ Vds] this shows that the Id is not completely independent of Vds rather it is slightly dependent on the value of Vds.</br>
+
+> Id = Kn'/2 . W/L . $(Vgs - Vt)^2$ [1 + λVds] --> constant current equation for saturation region of operation of MOSFET.</br>
+
+<img width="" height="" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-60.png?raw=true"></br>
+
+-----
+-----
 
 
 
