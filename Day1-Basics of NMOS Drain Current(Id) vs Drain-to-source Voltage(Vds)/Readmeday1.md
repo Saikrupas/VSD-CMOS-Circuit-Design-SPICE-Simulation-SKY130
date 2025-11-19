@@ -19,7 +19,7 @@
     - [LECTURE-5-Pinch-off region condition](#lecture-5-pinch-off-region-condition)
     - [LECTURE-6-Drain current model for saturation region of operation](#lecture-6-drain-current-model-for-saturation-region-of-operation)
   - [TOPIC-3:-Introduction to SPICE](#topic-3--introduction-to-spice)
-    -[LECTURE-1-Basic SPICE setup](#lecture-1-basic-spice-setup)
+    - [LECTURE-1-Basic SPICE setup](#lecture-1-basic-spice-setup)
     - [LECTURE-2-Circuit description in SPICE syntax](#lecture-2-circuit-description-in-spice-syntax)
     - [LECTURE-3-Define Technology parameters](#lecture-3-define-technology-parameters)
     - [LECTURE-4-First SPICE simulation](#lecture-4-first-spice-simulation)
@@ -397,6 +397,7 @@ In the below figure, the supply voltage to the gate terminal is not provided dir
 -----
 
 ### <u>Lecture-2:-Circuit description in SPICE syntax</u>
+
 
 
 
