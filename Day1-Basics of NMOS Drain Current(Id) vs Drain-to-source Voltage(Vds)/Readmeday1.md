@@ -18,8 +18,8 @@
     - [LECTURE-4-SPICE conclusion to resistive operation](#lecture-4-spice-conclusion-to-resistive-operation)
     - [LECTURE-5-Pinch-off region condition](#lecture-5-pinch-off-region-condition)
     - [LECTURE-6-Drain current model for saturation region of operation](#lecture-6-drain-current-model-for-saturation-region-of-operation)
-  - [TOPIC-3:-Introduction to SPICE](#Introduction-to-SPICE)
-    - [L1 Basic SPICE setup](#L1-Basic-SPICE-setup)
+  - [TOPIC-3:-Introduction to SPICE](#topic-3-introduction-to-spice)
+    - [L1 Basic SPICE setup](#lecture-1-basic-spice-setup)
     - [L2 Circuit description in SPICE syntax](#L2-Circuit-description-in-SPICE-syntax)
     - [L3 Define Technology parameters](#L3-Define-Technology-parameters)
     - [L4 First SPICE simulation](#L4-First-SPICE-simulation)
@@ -397,6 +397,7 @@ In the below figure, the supply voltage to the gate terminal is not provided dir
 -----
 
 ### <u>Lecture-2:-Circuit description in SPICE syntax</u>
+
 
 
 
