@@ -399,6 +399,64 @@ In the below figure, the supply voltage to the gate terminal is not provided dir
 ### <u>Lecture-2:-Circuit description in SPICE syntax</u>
 
 
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-66.png?raw=true">
+
+Now, we will write the syntax for this particular circuit in the SPICE netlist. To do that we need to follow some steps:- </br>
+
+Let give values to the components present in the circuit.</br>
+
+<img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-68.png?raw=true"></br>
+
++ **Step-1-Define Nodes**
+  
+  `Nodes are basically the points in between the component` is present so the SPICE engine can understand. </br>
+
+  <img width="1035" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-69.png?raw=true"></br>
+  
++ **Give names to the nodes**
++ **Write the code**
+  `since MOSFET has 4 terminals, and it is lying between 4 different nodes (vdd,n1,0,0), similarly the resistor is lying between 2 nodes (in,n1).`
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-70.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-71.png?raw=true"></br>
+
+<img width="510" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-72.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-73.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-74.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-75.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-76.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-77.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-78.png?raw=true"></br>
+
+The fashion in which it is written is <mark><u> "Drain", "Gate", "Source", and "Substrate" as (D,G,S,Sub)</u></mark>. This is a long channel MOSFET with L = 1.2μ.</br>
+
+Similarly, we can write netlist for Resistor.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-79.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-80.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-81.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-82.png?raw=true"></br>
+
+The final netlist of the given circuit.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-83.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-84.png?raw=true"></br>
+
+-----
+
+
+
 
 
 
