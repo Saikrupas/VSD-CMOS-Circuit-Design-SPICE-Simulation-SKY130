@@ -467,7 +467,7 @@ Inside the brackets, technology paramteters values will be present these values 
 
 <img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-86.png?raw=true"></br>
 
-<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-87.png?raw=true"></br>
+<img width="" height="" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-87.png?raw=true"></br>
 
 Now, we need to just pack the file with `.mod` extension file name and then call this `.mod` file in the top level SPICE netlist.</br>
 
@@ -479,6 +479,7 @@ We need to add the simulation commands, the way we provide the voltage to the ci
 We need to sweep the Vgs value  and Vds value from 0 to 2.5V for SPICE simulations.</br>
 
 -----
+
 
 
 
