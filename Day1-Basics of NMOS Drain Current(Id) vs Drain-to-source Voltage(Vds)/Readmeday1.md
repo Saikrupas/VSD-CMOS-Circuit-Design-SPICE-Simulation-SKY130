@@ -455,6 +455,30 @@ The final netlist of the given circuit.</br>
 
 -----
 
+### <u>Lecture-3:-Define Technology parameters</u>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-84.png?raw=true"></br>
+
+The next step is to come up with the model of this particular NMOS. For this we have model paramters, and it becomes easy to model any device from the particular model parameters. This is where the technology file comes into picture. The models for the name nmso will be found in file which has the attribute of the similar name.Thes model parameters for a particular technology node comes in a form of a package.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-85.png?raw=true"></br>
+
+Inside the brackets, technology paramteters values will be present these values are constants. Similarly for PMOS also.</br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-86.png?raw=true"></br>
+
+<img width="1305" height="510" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-87.png?raw=true"></br>
+
+Now, we need to just pack the file with `.mod` extension file name and then call this `.mod` file in the top level SPICE netlist.</br>
+
+<img width="" height="" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-88.png?raw=true"/></br>
+
+<img width="" height="" alt="image" src="https://github.com/Saikrupas/CMOS-Circuit-Design-SPICE-Simulation-SKY130-image-resources/blob/main/images-DAY1/img-89.png?raw=true"></br>
+
+We need to add the simulation commands, the way we provide the voltage to the circuit for the evaluation.
+We need to sweep the Vgs value  and Vds value from 0 to 2.5V for SPICE simulations.</br>
+
+-----
 
 
 
