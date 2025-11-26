@@ -64,7 +64,7 @@ ls -ltr
 You’ll see the folder `sky130CircuitDesignWorkshop/` that contains design files.
 
 
-![VNC directory listing](images/3_2.jpg)
+![VNC directory listing](3_2.jpg)
 ---
 
 ## 5. Run SPICE Simulations (with Plot Output)
@@ -115,5 +115,6 @@ Codespace provisioning and environment are maintained by **VSD (VLSI System Desi
 **Now, simulate your first CMOS circuit — completely on the cloud.**
 
 Learn. Design. Run. Visualize.
+
 
 
